@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import boxingImage from "../../../assets/images/aboutme.jpg";
 
-const Root = styled(Box)(({ theme }) => ({
+const Root = styled(Box)(({}) => ({
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#f5f1e5",
@@ -24,7 +24,7 @@ const InnerContent = styled(Box)(({ theme }) => ({
   },
 }));
 
-const ImageSection = styled(Box)(({ theme }) => ({
+const ImageSection = styled(Box)(({}) => ({
   flex: 1,
   display: "flex",
   justifyContent: "center",
@@ -86,7 +86,7 @@ const BoxingHero: React.FC = () => {
             sx={{
               backgroundColor: "black",
               color: "white",
-              width: {xs:"100%", sm:"160px"},
+              width: { xs: "100%", sm: "160px" },
               padding: "20px 10px 20px 10px",
             }}
           >

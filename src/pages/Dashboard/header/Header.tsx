@@ -10,18 +10,18 @@ import {
 import { styled } from "@mui/material/styles";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import XIcon from '@mui/icons-material/X';
+import XIcon from "@mui/icons-material/X";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link } from "react-router-dom";
 
-const StyledAppBar = styled(AppBar)(({ theme }) => ({
+const StyledAppBar = styled(AppBar)(({}) => ({
   backgroundColor: "rgba(0, 0, 0, 0.9)",
   backdropFilter: "blur(10px)",
   boxShadow: "none",
   borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
 }));
 
-const Logo = styled(Typography)(({ theme }) => ({
+const Logo = styled(Typography)(({}) => ({
   fontWeight: "bold",
   fontSize: "1.5rem",
   letterSpacing: "2px",
@@ -29,7 +29,7 @@ const Logo = styled(Typography)(({ theme }) => ({
   flexGrow: 1,
 }));
 
-const SocialIconButton = styled(IconButton)(({ theme }) => ({
+const SocialIconButton = styled(IconButton)(({}) => ({
   color: "#ffffff",
   backgroundColor: "rgba(255, 255, 255, 0.1)",
   margin: "0 4px",
@@ -70,11 +70,7 @@ const Header: React.FC = () => {
               </SocialIconButton>
             </Link>
 
-            <Link
-              to="https://x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="https://x.com" target="_blank" rel="noopener noreferrer">
               <SocialIconButton>
                 <XIcon fontSize="small" />
               </SocialIconButton>
